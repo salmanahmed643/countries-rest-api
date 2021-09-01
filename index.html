@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Countries </title>
+    <!-- bootstrap style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/mealdb.css">
+</head>
+<body>
+    
+
+    <div class="container mt-5">
+        <!-- countries search result start -->
+        <div class="input-group mb-3 w-50 mx-auto">
+            <!-- input -->
+            <input id="input_field" type="text" class="form-control" placeholder="Bangladesh" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <!-- button -->
+            <button onclick="countriySearch()" class="btn btn-outline-secondary" type="button" id="button-addon2"> Search </button>
+        </div>
+        <!-- countries search result end -->
+
+
+        <!-- single country detail start -->
+        <div id="single_container" class="w-50 mx-auto border-success mb-3" style="max-width: 18rem;">
+
+        </div>
+        <!-- single country detail end -->
+
+        <!-- countries details start -->
+        <div id="countries_container" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+        <!-- countries details end -->
+    </div>
+
+
+    <!-- bootstrap js link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/restcountries.js"></script>
+</body>
+</html>
